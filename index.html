@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CBT Mock Test Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">✓</span><div><strong>CBT<span>Engine</span></strong><small>Computer Based Test</small></div></div>
+  <div class="top-meta"><span class="live-dot"></span> Practice mode <span class="divider"></span><span id="headerTimer">--:--</span></div>
+</header>
+<main>
+  <section id="welcome" class="welcome panel">
+    <div class="eyebrow">READY WHEN YOU ARE</div>
+    <h1>Practice with purpose.</h1>
+    <p>Take a timed mock test, navigate questions, mark items for review, and see a detailed result.</p>
+    <div class="setup-grid">
+      <label>Candidate name<input id="candidateName" type="text" placeholder="Enter your name" maxlength="70"></label>
+      <label>Question set
+        <select id="questionSet">
+          <option value="sample-15.json">Sample Test · 15 questions</option>
+          <option value="sample-questions.json">Alternate Test · 5 questions</option>
+        </select>
+      </label>
+      <label>Duration
+        <select id="duration">
+          <option value="10">10 minutes</option><option value="15">15 minutes</option><option value="20">20 minutes</option>
+        </select>
+      </label>
+    </div>
+    <div class="welcome-actions"><button id="startBtn" class="primary">Start test <span>→</span></button><button id="resumeBtn" class="secondary hidden">Resume saved test</button><button id="resetSavedBtn" class="text-btn hidden">Clear saved progress</button></div>
+    <div class="note"><strong>Heads up:</strong> Progress and timer are saved in this browser. Refreshing the page can resume your test.</div>
+  </section>
+
+  <section id="testScreen" class="hidden">
+    <div class="test-heading">
+      <div><div class="eyebrow">MOCK EXAM</div><h1 id="testTitle">Practice Test</h1><p id="candidateLabel">Candidate</p></div>
+      <div class="timer-card"><small>TIME REMAINING</small><strong id="timer">10:00</strong><span id="timerHint">Timer is running</span></div>
+    </div>
+    <div class="progress-line"><div id="progressBar"></div></div>
+    <div class="test-layout">
+      <article class="question-panel panel">
+        <div class="question-top"><span id="questionNumber" class="question-number">QUESTION 01</span><span id="questionMarks" class="marks">+1 / −0.25</span></div>
+        <h2 id="questionText">Question text</h2>
+        <div id="options" class="options"></div>
+        <div class="question-tools"><button id="clearAnswer" class="text-btn">Clear response</button><button id="markReview" class="review-btn">☆ Mark for review</button></div>
+        <div class="question-nav"><button id="prevBtn" class="secondary">← Previous</button><span id="currentPosition">1 of 15</span><button id="nextBtn" class="primary">Next →</button></div>
+      </article>
+      <aside class="palette-panel panel">
+        <div class="palette-head"><div><strong>Question palette</strong><small>Choose a question</small></div><span id="paletteCount">0 / 15</span></div>
+        <div class="legend"><span><i class="legend-dot answered"></i>Answered</span><span><i class="legend-dot review"></i>Review</span><span><i class="legend-dot unanswered"></i>Unanswered</span></div>
+        <div id="palette" class="palette"></div>
+        <div class="palette-summary"><div><span class="sum-dot answered"></span><span>Answered</span><b id="answeredCount">0</b></div><div><span class="sum-dot review"></span><span>Review</span><b id="reviewCount">0</b></div><div><span class="sum-dot unanswered"></span><span>Unanswered</span><b id="unansweredCount">0</b></div></div>
+        <button id="submitBtn" class="submit-btn">Submit test <span>→</span></button>
+        <button id="saveExitBtn" class="text-btn full">Save & exit</button>
+      </aside>
+    </div>
+  </section>
+
+  <section id="resultScreen" class="hidden">
+    <div class="result-heading"><div class="eyebrow">TEST COMPLETED</div><h1>Here’s how you did.</h1><p id="resultCandidate">Candidate result</p></div>
+    <div class="result-summary">
+      <div class="score-card panel"><small>FINAL SCORE</small><strong id="finalScore">0</strong><span id="scoreOutOf">out of 15</span><div class="score-track"><div id="scoreFill"></div></div></div>
+      <div class="stat-card panel"><span class="stat-icon green">✓</span><small>Correct</small><strong id="correctTotal">0</strong></div>
+      <div class="stat-card panel"><span class="stat-icon red">×</span><small>Incorrect</small><strong id="incorrectTotal">0</strong></div>
+      <div class="stat-card panel"><span class="stat-icon gray">—</span><small>Unanswered</small><strong id="blankTotal">0</strong></div>
+      <div class="stat-card panel"><span class="stat-icon purple">%</span><small>Accuracy</small><strong id="accuracyTotal">0%</strong></div>
+    </div>
+    <div class="result-detail panel">
+      <div class="detail-head"><div><div class="eyebrow">ANSWER REVIEW</div><h2>Review your answers</h2></div><span id="timeTaken">Time used: --</span></div>
+      <div id="reviewList"></div>
+    </div>
+    <div class="result-actions"><button id="downloadResult" class="secondary">Download result JSON</button><button id="retakeBtn" class="primary">Take another test ↗</button></div>
+  </section>
+</main>
+<footer><span>CBT Engine · Offline-friendly practice</span><span>Progress stored locally in your browser</span></footer>
+<script src="script.js"></script>
+</body>
+</html>

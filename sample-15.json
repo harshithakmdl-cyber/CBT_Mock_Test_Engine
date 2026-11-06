@@ -1,0 +1,203 @@
+{
+  "title": "Web Development Basics",
+  "durationMinutes": 10,
+  "positiveMarks": 1,
+  "negativeMarks": 0.25,
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Which HTML element is used to create a hyperlink?",
+      "options": [
+        "<link>",
+        "<a>",
+        "<href>",
+        "<url>"
+      ],
+      "answer": 1,
+      "explanation": "The anchor element <a> creates hyperlinks.",
+      "topic": "HTML"
+    },
+    {
+      "id": "q2",
+      "question": "Which CSS property changes the text color?",
+      "options": [
+        "font-style",
+        "text-color",
+        "color",
+        "foreground"
+      ],
+      "answer": 2,
+      "explanation": "The color property sets the foreground text color.",
+      "topic": "CSS"
+    },
+    {
+      "id": "q3",
+      "question": "Which keyword declares a block-scoped variable in JavaScript?",
+      "options": [
+        "var",
+        "let",
+        "define",
+        "dim"
+      ],
+      "answer": 1,
+      "explanation": "let declares a block-scoped variable.",
+      "topic": "JavaScript"
+    },
+    {
+      "id": "q4",
+      "question": "What does JSON stand for?",
+      "options": [
+        "Java Source Object Notation",
+        "JavaScript Object Notation",
+        "Joined Standard Object Names",
+        "Java Syntax Output Network"
+      ],
+      "answer": 1,
+      "explanation": "JSON means JavaScript Object Notation.",
+      "topic": "Web"
+    },
+    {
+      "id": "q5",
+      "question": "Which method converts a JSON string into a JavaScript value?",
+      "options": [
+        "JSON.stringify()",
+        "JSON.parse()",
+        "JSON.convert()",
+        "JSON.read()"
+      ],
+      "answer": 1,
+      "explanation": "JSON.parse() parses JSON text into a JavaScript value.",
+      "topic": "JavaScript"
+    },
+    {
+      "id": "q6",
+      "question": "Which HTTP method is commonly used to retrieve data?",
+      "options": [
+        "POST",
+        "PATCH",
+        "GET",
+        "DELETE"
+      ],
+      "answer": 2,
+      "explanation": "GET requests a representation of a resource.",
+      "topic": "Networking"
+    },
+    {
+      "id": "q7",
+      "question": "Which CSS layout system is designed for one-dimensional layouts?",
+      "options": [
+        "Grid",
+        "Flexbox",
+        "Float",
+        "Position"
+      ],
+      "answer": 1,
+      "explanation": "Flexbox is suited to one-dimensional row or column layouts.",
+      "topic": "CSS"
+    },
+    {
+      "id": "q8",
+      "question": "Which array method adds an item to the end of an array?",
+      "options": [
+        "push()",
+        "pop()",
+        "shift()",
+        "slice()"
+      ],
+      "answer": 0,
+      "explanation": "push() appends one or more items to an array.",
+      "topic": "JavaScript"
+    },
+    {
+      "id": "q9",
+      "question": "What is the purpose of localStorage?",
+      "options": [
+        "Store data only during a function",
+        "Persist key/value data in the browser",
+        "Send data to a server automatically",
+        "Store passwords securely"
+      ],
+      "answer": 1,
+      "explanation": "localStorage keeps string key/value pairs across browser sessions on the same origin.",
+      "topic": "Web"
+    },
+    {
+      "id": "q10",
+      "question": "Which SQL clause filters rows before grouping?",
+      "options": [
+        "ORDER BY",
+        "HAVING",
+        "WHERE",
+        "GROUP BY"
+      ],
+      "answer": 2,
+      "explanation": "WHERE filters rows before aggregation and grouping.",
+      "topic": "Database"
+    },
+    {
+      "id": "q11",
+      "question": "Which tag is used for the main heading, typically the top-level heading?",
+      "options": [
+        "<head>",
+        "<h1>",
+        "<title>",
+        "<header>"
+      ],
+      "answer": 1,
+      "explanation": "h1 represents the highest-level heading in a document section.",
+      "topic": "HTML"
+    },
+    {
+      "id": "q12",
+      "question": "Which JavaScript operator checks both value and type equality?",
+      "options": [
+        "=",
+        "==",
+        "===",
+        "!="
+      ],
+      "answer": 2,
+      "explanation": "=== is strict equality and does not coerce types.",
+      "topic": "JavaScript"
+    },
+    {
+      "id": "q13",
+      "question": "Which Git command creates a local copy of a remote repository?",
+      "options": [
+        "git push",
+        "git clone",
+        "git commit",
+        "git merge"
+      ],
+      "answer": 1,
+      "explanation": "git clone copies a repository and its history to a local directory.",
+      "topic": "Git"
+    },
+    {
+      "id": "q14",
+      "question": "What does responsive web design aim to do?",
+      "options": [
+        "Make pages adapt to different screen sizes",
+        "Require a separate site for every device",
+        "Disable mobile browsers",
+        "Use only fixed-width layouts"
+      ],
+      "answer": 0,
+      "explanation": "Responsive design adapts layout and content to different viewport sizes.",
+      "topic": "Web"
+    },
+    {
+      "id": "q15",
+      "question": "Which browser API can store small structured data as strings locally?",
+      "options": [
+        "localStorage",
+        "console",
+        "window.alert",
+        "document.write"
+      ],
+      "answer": 0,
+      "explanation": "localStorage stores string values by key in the browser.",
+      "topic": "Web"
+    }
+  ]
+}

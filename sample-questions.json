@@ -1,0 +1,73 @@
+{
+  "title": "Alternate Quick Test",
+  "durationMinutes": 5,
+  "positiveMarks": 1,
+  "negativeMarks": 0,
+  "questions": [
+    {
+      "id": "a1",
+      "question": "Which language styles web page elements?",
+      "options": [
+        "HTML",
+        "CSS",
+        "SQL",
+        "Python"
+      ],
+      "answer": 1,
+      "explanation": "CSS controls visual presentation and layout.",
+      "topic": "Web"
+    },
+    {
+      "id": "a2",
+      "question": "Which JavaScript function displays a message dialog?",
+      "options": [
+        "alert()",
+        "promptHTML()",
+        "message()",
+        "display()"
+      ],
+      "answer": 0,
+      "explanation": "alert() opens a simple browser alert dialog.",
+      "topic": "JavaScript"
+    },
+    {
+      "id": "a3",
+      "question": "Which element provides a form input?",
+      "options": [
+        "<input>",
+        "<section>",
+        "<aside>",
+        "<meta>"
+      ],
+      "answer": 0,
+      "explanation": "The input element creates an interactive form control.",
+      "topic": "HTML"
+    },
+    {
+      "id": "a4",
+      "question": "What does CSS stand for?",
+      "options": [
+        "Computer Style Sheets",
+        "Cascading Style Sheets",
+        "Creative Sheet Syntax",
+        "Colorful Style System"
+      ],
+      "answer": 1,
+      "explanation": "CSS stands for Cascading Style Sheets.",
+      "topic": "CSS"
+    },
+    {
+      "id": "a5",
+      "question": "Which Git command records staged changes in history?",
+      "options": [
+        "git add",
+        "git status",
+        "git commit",
+        "git fetch"
+      ],
+      "answer": 2,
+      "explanation": "git commit creates a commit from staged changes.",
+      "topic": "Git"
+    }
+  ]
+}
